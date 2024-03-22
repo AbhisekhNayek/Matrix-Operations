@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Operations</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Matrix Operations</h1>
+  
+    <div>
+      <label for="matrix1">Matrix 1:</label>
+      <textarea id="matrix1" rows="3" cols="20"></textarea>
+    </div>
+  
+    <div>
+      <label for="matrix2">Matrix 2:</label>
+      <textarea id="matrix2" rows="3" cols="20"></textarea>
+    </div>
+
+    <div>
+      <label for="operation">Select Operation:</label>
+      <select id="operation">
+        <option value="add">Addition</option>
+        <option value="subtract">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="scalarMultiply">Scalar Multiplication</option>
+        <option value="transpose">Transpose</option>
+        <option value="inverse">Inversion</option>
+      </select>
+    </div>
+
+    <button class="btn" onclick="performOperation()">Result</button>
+  
+    <div id="result" class="result">
+      <!-- Display result here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

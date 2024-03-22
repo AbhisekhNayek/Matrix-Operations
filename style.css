@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    color: #ffffff;
+    display:grid;/*Using grid display property to center the body's content*/
+    place-items: center;
+    min-height: 100vh;
+    line-height: 1.6remu;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 2px solid #717377;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.display {
+    line-height: 85px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+
+/*Animation that causes the motion in the gradient*/
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Input is levitated when hovered*/
+input:hover {
+    transform: scale(1.01);
+}
+
+.btn {
+    border: 1px solid #717377;
+    width: 100px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 10%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect*/
+#performBtn:hover {
+    color: rgb(179, 255, 179);
+    border: none;
+    transform: scale(1.07);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1);
+    outline: 1px solid rgb(179, 255, 179);;
+}
+
+.steps {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #d1d1d1;
+}
+  
+textarea,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0a0a0a;
+    border: 0;
+    border-radius: 12px;
+    transition: all 1s ease;
+    box-sizing: border-box;
+  }
+  
+  textarea:hover,
+  input[type="number"]:hover {
+    transform: scale(1.01);
+  }
+  
