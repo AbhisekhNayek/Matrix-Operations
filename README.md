@@ -16,13 +16,17 @@ This web application allows users to perform various matrix operations including
 - Perform the selected operation.
 - View the result of the operation.
 
+## Demo 🚀
+
+Check out the [Demo](https://abhisekhnayek.github.io/Matrix-Operations/) to see the web application in action!
+
 ## Technologies Used 💻
 
 - HTML
 - CSS
 - JavaScript
 
-## Getting Started 🚀
+## Getting Started 🏁
 
 To run the project locally, follow these steps:
 
